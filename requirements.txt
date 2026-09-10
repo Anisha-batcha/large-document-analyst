@@ -1,0 +1,15 @@
+# Stage 1: core server
+flask==3.0.3
+python-dotenv==1.0.1
+
+# Stage 3 (text extraction) - will use
+# pdfplumber==0.11.4
+
+# Stage 5 (embeddings) - will use
+# sentence-transformers==3.0.1
+
+# Stage 6 (vector database) - will use
+# faiss-cpu==1.8.0
+
+# Stage 8 (LLM answers via Hugging Face) - will use
+# huggingface_hub==0.24.6

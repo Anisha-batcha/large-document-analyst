@@ -1,0 +1,16 @@
+# Environment / secrets
+.env
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+
+# Uploaded documents (don't commit user files)
+uploads/*
+!uploads/.gitkeep
+
+# OS/editor junk
+.DS_Store
+.vscode/
