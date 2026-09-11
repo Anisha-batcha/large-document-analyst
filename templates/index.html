@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Large Document Analyst</title>
+</head>
+<body>
+    <h1>Large Document Analyst</h1>
+    <p>Upload a document (PDF or TXT) to get started.</p>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="document" accept=".pdf,.txt" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+    {% endif %}
+
+    {% if preview %}
+        <h3>Extracted Text Preview:</h3>
+        <pre style="white-space: pre-wrap; background:#f4f4f4; padding:10px;">{{ preview }}</pre>
+    {% endif %}
+</body>
+</html>
